@@ -14,6 +14,7 @@ set expandtab     " tabs are spaces
 " }}}
 
 " UI Config {{{
+colorscheme torte  " set color scheme
 set number         " show line numbers
 set showcmd        " show command in bottom bar
 set cursorline     " highlight current line
