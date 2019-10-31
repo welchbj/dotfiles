@@ -2,18 +2,9 @@
 set nocompatible
 " }}}
 
-" Plugin management {{{
-call plug#begin('~/.vim/plugged')
-Plug 'altercation/vim-colors-solarized' " color scheme
-Plug 'yggdroot/indentline'              " visual lines for indentation spaces
-call plug#end()
-" }}}
-
 " Colors {{{
-let g:solarized_termcolors=256 " use terminal 256 color support
-syntax enable                  " allow syntax highlighting
-set background=light           " use light mode
-colorscheme solarized          " solarized color scheme (in light mode)
+syntax enable        " allow syntax highlighting
+set background=light " use light mode
 " }}}
 
 " Tabs & Spaces {{{ 
@@ -22,7 +13,7 @@ set softtabstop=4 " number of spaces in tab when editing
 set expandtab     " tabs are spaces
 " }}}
 
-" UI config {{{
+" UI Config {{{
 set number         " show line numbers
 set showcmd        " show command in bottom bar
 set cursorline     " highlight current line
