@@ -5,7 +5,7 @@ alias la='ls -la'
 alias lt='ls -latR'
 
 # clipboard aliases
-if which xclip >/dev/null 2>&1; then
+if which xclip &>/dev/null; then
   alias cclip='xclip -selection clipboard'
   alias clipp='xclip -selection clipboard -o'
 fi
