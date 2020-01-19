@@ -101,3 +101,6 @@ fi
 if command -v tmux &> /dev/null && [ -n "" ] && [[ ! "xterm-256color" =~ screen ]] && [[ ! "xterm-256color" =~ tmux ]] && [ -z "" ]; then
   exec tmux
 fi
+
+# so that history updates across tmux panes/windows
+export PROMPT_COMMAND='history -a; history -n'
