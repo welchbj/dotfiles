@@ -2,6 +2,10 @@
 
 set -ex
 
-ln -sf $PWD/.bash_aliases $HOME/.bash_aliases
-ln -sf $PWD/.bashrc $HOME/.bashrc
-ln -sf $PWD/.vimrc $HOME/.vimrc
+this_file=$(realpath $0)
+this_dir=$(dirname $this_file)
+
+ln -sf $this_dir/.bash_aliases $HOME/.bash_aliases
+ln -sf $this_dir/.bashrc $HOME/.bashrc
+ln -sf $this_dir/.vimrc $HOME/.vimrc
+ln -sf $this_dir/.tmux.conf $HOME/.tmux.conf
