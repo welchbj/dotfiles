@@ -14,16 +14,16 @@ set expandtab     " tabs are spaces
 " }}}
 
 " UI Config {{{
-colorscheme torte  " set color scheme
-set number         " show line numbers
-set showcmd        " show command in bottom bar
-set cursorline     " highlight current line
-filetype plugin on " load filetype plugins
-filetype indent on " load filetype-specific indent files
-set wildmenu       " visual autocomplete for command menu
-set showmatch      " highlight matching [{()}]
-set lazyredraw     " redraw only when necessary
-set colorcolumn=80 " 80-character ruler
+colorscheme elflord " set color scheme
+set number          " show line numbers
+set showcmd         " show command in bottom bar
+set cursorline      " highlight current line
+filetype plugin on  " load filetype plugins
+filetype indent on  " load filetype-specific indent files
+set wildmenu        " visual autocomplete for command menu
+set showmatch       " highlight matching [{()}]
+set lazyredraw      " redraw only when necessary
+set colorcolumn=80  " 80-character ruler
 " }}}
 
 " Searching {{{
