@@ -95,12 +95,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# ensure that tmux runs when we start up
-# see: https://unix.stackexchange.com/a/113768
-if command -v tmux &> /dev/null && [ -n "" ] && [[ ! "xterm-256color" =~ screen ]] && [[ ! "xterm-256color" =~ tmux ]] && [ -z "" ]; then
-  exec tmux
-fi
-
-# so that history updates across tmux panes/windows
-export PROMPT_COMMAND='history -a; history -n'
